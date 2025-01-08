@@ -1,0 +1,139 @@
+operators
+--> it is pre-defined symbol used to perform specific operation
+1) <arithmetic-operator
++,-,*,/,%,++,--
+
+//increment
+-->post increment
+
+-->pre-increment (after)
+
+first value is assigned
+then increments
+
+eg:-
+let a = 10;
+console.log(a);//10
+console.log(a++) 10
+console.log(a++) 11
+
+
+-->pre-increment (before)
+
+first increment done 
+then value is assigned
+
+eg:-
+let b = 10;
+consloe.log(b)//10
+console.log(++b) //11
+
+2) assignment operator (short-hand)
+-->=,+=,-=,*=,/=,%=
+
+eg:-
+var c = 10;
+console.log(c) //10
+c = c+ 10 -->c +=10
+
+3)logical operator
+AND (&&)
+OR  (||)
+NOT (!)
+
+4)relational-operator
+--> <,<=,>,>=,==,===,!=
+
+eg:-
+console.log(5==5)//true
+console.log(5 =="5")//true
+console.log(5 ===5)//true
+console.log(5 ==="5")//false
+
+5)ternary operator
+-->it will accept three operands
+
+syntax:-
+
+(condition) ? true-statement : false-statement
+
+conditional-statements
+-------------------------
+
+they are used to make some decision based on some condition
+
+simple-if
+if-else
+else-if-else (else-if-ladder)
+nested if
+switch
+
+simple-if (only have true true-statement)
+
+if(5<=10)
+{
+    console.log("hello-world")
+}
+
+if-else
+if(100<=10)
+{
+    console.log("hello")
+}else{
+    console.log("bye")
+}
+
+else-if-else
+
+let a = 20;
+let b = 30;
+let c = 40;
+
+if(a>=b && a>=c)
+{
+    console.log("a is greatest")
+}else if(b >= a && b >=c){
+    console.log("b is greatest")
+}else{
+    console.log("c is greatest")
+}
+
+nested-if
+
+let user = "admin"
+let password = 12345
+
+if user ==="admin"
+{
+    console.log("user valid")
+    if(password === 12345)
+    {
+        console.log("password valid")
+        console.log("login - successfull")
+    }else{
+        console.log("password - invalid")
+    }
+}else{
+    console.log("login - unsuccessfull")
+}
+
+switch
+
+let n = 1
+
+switch(n)
+let n = 1
+switch(n)
+{
+    case 1:
+    {
+        console.log("print 1")
+    }
+    break;
+    case 2:{
+        console.log("print 2")
+    }break;
+    default{
+        console.log("invalid")
+    }
+}
