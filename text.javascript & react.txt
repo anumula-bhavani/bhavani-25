@@ -1,0 +1,709 @@
+Frontend
+User interface where the users can see and interact with the application
+Client side
+Creating websites, designs, structure
+JavaScript
+It is a object based and object oriented programming language used to convert static page into dynamic page.
+Static and Dynamic websites:
+Static websites remains same to everyone (FB login)
+Dynamic websites changes to everyone (Facebook data, Youtube data, Criczbuzz, Google maps)
+Scripting language
+Used to develop dynamic websites
+Often used for form validations
+Current version “ES13”
+Java script code is written inside the script tag
+Two ways to run :
+Using Browser
+Using Node.js
+Datatypes
+It is a value used in programming language ,two types primitive and non primitive
+Primitive datatype:
+String, Number, Boolean, Undefined, Null, Symbol, and BigInt.
+Non primitive datatype:
+Object, Array, Function, RegExp
+Variables
+used to store value/data
+dynamic in nature
+no need to mention the datatype
+3 types of variables (var, let, const)
+Ctrl shift j – console in browser
+Break point 
+
+Scope
+global scope – declare the variables outside the method and access inside the method
+local scope/script scope – declare the variables inside the method but cannot access outside 
+block scope – declare the variables inside {}
+
+Ctrl shift j – console in browser
+Break point 
+Debugging javascript
+Website using html and css
+
+
+Operators
+It is a pre-defined symbol used to perform specific operation
+Arithmetic Operators:
+Operator
+Description
++
+Addition
+-
+Subtraction
+*
+Multiplication
+**
+Exponentiation (ES2016)
+/
+Division
+%
+Modulus (Division Remainder)
+++
+Increment
+--
+Decrement
+
+Increment:
+Pre increment
+Post increment
+Assignment operator(short hand)
++=, -=, *=, /=, %=
+Eg:  var c=10
+        console.log(c)  //10
+        c=c+10 🡪c+=10
+
+Logical operator
+AND(&&)
+OR(||)
+NOT(!)
+Relational operator
+Gives output in Boolean format
+<, <=, <, >=, ==, ===, !=
+Check values not the datatype 🡪 ==
+Checks both datatype and value 🡪 === (strictly equals to)
+Console.log(5==5) //true
+Console.log(5==’5’)//true
+Console.log(5===5) //true
+Console.log(5===”5”)//false
+Ternary operator
+It will accept three operands
+Syntax:  (condition) ? true-statement : false-statement
+Similar to if-else
+Conditional statements
+They are used to make some decision based on some condition
+Simple if (only have true statement)
+                   If(s<=10)
+                   {
+                   Console.log(“hello world”)
+                    }
+If-else (have true and false statement)
+                   If(s<=10)
+                   {
+                   Console.log(“hello world”)
+                   }else{
+                  Console.log(“bye”)
+                   }    
+Else-if-else / else-if ladder
+Let a=20
+Let b=30
+Let c=40
+If(a>=b && a>=c)
+
+Nested if
+Let user=”admin”
+Let password=12345
+If(user===”admin”)
+    {
+    Console.log(“uservalid”)
+    If (password===12345)
+    {
+        Console.log(“password valid”)
+        Console.log(“login successful”)
+    }else{
+        Console.log(“password invalid”)
+    }
+}else{
+    Console.log(“login unsucessfull”)
+}
+
+Switch case in js
+let n=1
+switch(n)
+{
+    case 1:
+    {
+        console.log("print i")
+    }
+    break;
+    case 2:
+    {
+        console.log("print 2")
+    }
+    break;
+    default:
+    {
+        console.log("invalid")
+    }
+}
+If the case is monday and Tuesday print football
+If the case is Wednesday and tusday print cricket
+If the case is Friday print volleyball
+If the case is Saturday print basketball
+If the case is Sunday print holiday
+The input should be given by the end user
+
+
+let day = prompt("Enter the day of the week:").toLowerCase();
+
+switch (day) {
+    case "monday":
+    case "tuesday":
+        console.log("Football");
+        break;
+    case "wednesday":
+    case "thursday":
+        console.log("Cricket");
+        break;
+    case "friday":
+        console.log("Volleyball");
+        break;
+    case "saturday":
+        console.log("Basketball");
+        break;
+    case "sunday":
+        console.log("Holiday");
+        break;
+    default:
+        console.log("Invalid input. Please enter a valid day of the week.");
+}
+
+
+looping statement :
+used to execute/iterate set of instructions based on conditions
+
+while loop 
+it will iterate set of instructions until the condition become false
+by default 0 iteration
+syntax
+while(condition)
+{
+   set of instruction
+}
+Example
+let i=1;
+while(i <= 5){
+    console.log(i);
+    i++  //output --> 1 2 3 4 5
+}
+
+do while loop
+it will execute first then it will check the condition
+by default it will takes one iteration
+syntax
+do(
+    set of instruction
+ )while(condition)
+
+Example 
+let a=5;
+do{
+    console.log(a);
+    a--;  //output --> 5 4 3 2 1 
+}while(a >= 1)
+
+for loop
+three arguments
+ 1)initialization
+ 2)condition
+ 3)increment/decrement
+
+syntax
+for(initialization; Condition; increment/decrement){
+     set of instruction
+}
+
+Example
+for(let i=1; i<=5; i++){
+    console.log(i);   //output --> 1 2 3 4 5
+}
+
+
+
+
+Functions in javaScript :
+Functions are first citizens in java Script
+Functions are object in javaScript
+
+Types of functions
+Function declaration statement/Named function/Pure function
+Function expression
+Function programming
+Higher order function
+Call back function
+Arrow function
+Nested function
+IIFE( Immediate invoking function expression)
+Function declaration statement:
+It is a set of instruction or block of code used to perform specific task
+Syntax:
+function fun-name(parameters,......){
+    set of instructions
+}
+fun-name(arguments,......)
+
+Return keyword
+It will stop execution of the function
+Hoisting
+We can call function before the function declaration
+
+
+
+function – keyword 
+fun-name – identifier 
+parameters – identifier
+block{} – local scope(cannot access outside the function
+arguments – data/values(data types)
+
+Main Advantages
+Code Reuseability(write once call multiple times)
+
+
+Create a function of two numbers and the input should be taken from end user
+nested function
+function inside another function
+by using this keyword used to access the global scope variable in local scope
+we cannot access local scope variable using this keyword
+lexical scope/scope chain
+the ability of js engine search bar variable in local scope if it is not available it will start search in global scope
+clouser
+the binding of child function to the parent function
+or it is the binding of child function lexical scope to the parent function we will call that as a closure
+disadvantage of closure is memory wastage (whenever we call the child function multiple times, multiple times closure will be created in heap area it leads to memory wastage)
+IIFE function
+it will be called immediately once function object is created
+syntax
+(expression - function)()
+Example
+(function()
+{
+    console.log("hello)
+})();
+arrow function
+(()=>{
+    console.log("hello)
+})()
+array in javascript
+it is used to store data of an different datatypes and it is heterogeneous in javaScript
+two ways to create arrayin javaScript
+let arr=[10,"hello",true,1n,Undefined]
+console.log(arr);
+objects in javascript
+objects are used to store data in the form of key and value pair
+two types to cereate object
+declaration way
+let obj={
+    name:"abc",
+    id:1,
+    boolean:true,
+    arr:[10,20,30],
+    null:null,
+    Undefined:undefined,
+    demo:function(){
+        console.log("hello)
+    }
+}
+console.log(obj);
+we can create object using constructor function
+it is used to create object
+function obj1(name,id){
+    this.name=name;
+    this .id-id;
+}
+let p1=new obj1("abc",1)
+console.log(p1);
+we cannot create constructor function using the arrow function
+
+asynchronous function
+making a way for other function to execute first
+two methods
+set timeout(cbf,delay time)
+set interval(cbf,delay time)
+prent inside window object
+when the asynchronous function does not work promise will help the function
+
+promise
+it is an object
+it is uesd to look after asynchronous function
+it is having three phase
+pending phase (we dont know whether the promise is resolve or reject)
+either it will be resolved or reject
+resolve or fullfill phase  (pass)
+when asynchronous function working properly
+then(cbf) method
+reject phase  (fail)
+when asynchronous fuction not working properly
+catch(cbf) method
+
+syntax for promise
+new Promise((resolve,reject)=>{
+    asynchronous function code
+})
+.then(cbf)
+.catch(cbf)
+
+online will check whether the device is connected to internet or not
+isNaN is a method which checks the characters
+promise chaining 
+using multiple then methods
+async and avoid it is a keyword used to avoid promise chaining
+ajax asynchronous javascript and xml
+
+bom(browser object model) having a root element window
+window is having APIs 
+screen API (screen size)
+history API (history.go , history.back)
+fetch API 
+navigator API (takes all the devices/hardware)
+navigation API (fetch current location)
+storage API (local storage session storage)
+DOM
+
+DOM(document object model) 
+dom contains root element document
+html code is arranged in a tree structure inside the document
+html is divided into two parts 
+head (mata tag ,title tag)
+body (all tags)
+all the tags will be treated as a node
+
+dom 
+it is an object 
+it is an API provided by window 
+it is having a root element document
+it is having life span: until page reloads
+once the page has been reloaded the old dom is been distroyed and new dom is created
+dom is used to create,update/modify,delete the element 
+and we can provide style using dom
+
+how to convert html structure into dom
+document
+html 
+head (meta tag , title tag)
+body (h1 tag(hello world),para tag(batch-6))
+
+document 
+html
+head 
+body
+form
+   label, input
+div 
+spam , div
+         ol 
+          it in 
+
+
+if we target the element/tag using document directly (direct access)
+indirectly (indirect acess)
+
+in direct access methods in dom
+document.getElementById("value")
+document.getElementByClassName("value")
+document.getElementByTagName("value")
+document.getElementByName("value")
+document.querySelector("value")
+document.querySelectorAll("value")
+
+document.querySelector
+--->we have to pass value with css symbol.
+--->will return reference of first element.
+
+document.querySelectorAll
+--->we have to pass value with css symbol.
+--->will return reference in a node list.
+
+Events in DOM 
+---->it is an action performed by end-users on a web-page
+types
+-->key board
+key up 
+key down 
+key press
+-->mouse
+onmouse over
+onmouse leave
+dbclick
+-->form 
+input
+blur
+focus
+-->pointer
+click
+
+JSON (java script object notation)
+--->it is a plain text file used to store data in the form of key and value pair
+--->where all the keys should be enclosed in double quotes
+--->two methods
+1)stringify()
+-->will convert object to JSON format
+2)parse()
+-->will convert JSON to object format
+
+how to create a JSON
+step 1-> craete a .json file
+Step 2->create a data in the form of key and value pair and key should be enclosed with double quotes .
+        Has a value we should not use undefined and function data-type
+
+
+in json we are going to create array of object -->[{},{},{},.....]
+fetching json to web page 
+3 methods
+-->fetch()method
+-->ajax
+-->axios
+
+frame work
+-->It is a collection of library
+-->example(angular js ,bootstrap ,tailwind css)
+library
+-->it is a collection of methods or function
+-->example(react js, jquery, node js, popper js)
+
+react
+-->it is a library
+-->it is used to develop single page application
+-->it is a component based application
+-->components are re-usable
+-->react is declarative
+
+note-->react will renders component on the web page without page reloading
+
+react uses diffing algorithm
+MVC architecture
+three dependencies
+-->react(create element ,all hooks)
+-->react dom
+-->react script
+
+2013, facebook(meta), jorden walke
+
+react 19
+how to create react-application
+1-->CDN way
+2-->node.js way
+a-->npm
+used to install ,update ,delete packages in js
+packages will be installed globally
+
+npm install -g create-react-application
+create-react-app project-name
+
+npm create vite@latest--->it will install layest version of react
+
+b-->npx
+npx is used to execute packages without installing it.
+no need of globally while installing packages
+
+npx create-react-app project-name
+
+cd day1
+npm create vite@latest
+project name:app 
+select a framework:react 
+select a varient:javascript
+cd app
+npm install
+npm run dev 
+o and press enter key 
+proceed (yes/y)
+enter the package name(react the enter then select the package name)
+
+components in react
+-->these are basic building blocks in react
+-->components rae reusable
+-->components are two types
+class based components 
+function based components/presentational component /dumb component
+
+
+class based component
+-->it is a es6 class in js.
+-->it uses react lifecycle.
+-->it is a statefull component.
+-->it uses render method.
+   render() method will renders component on the web page
+-->It uses constructor to store data and extends keyword.
+
+import React from 'react'
+class demo extends React.Component{
+    render(){
+        return <h1>i am class based component</h1>
+    }
+}
+export default demo;
+
+function baes component 
+-->it is a js pure function
+-->it does not use react lifecycle
+-->it does not take any render method
+-->ot is stateless
+   after react 16.8 FBC becomes statefull component because of hooks
+-->there is no constructor and extends in FBC
+
+import React from 'react'
+function demo1(){
+    return(
+        <h1>i am function component</h1>
+    )
+}
+export default demo1
+
+import React from 'react'
+let demo2=()=>{
+    return(
+        <h1>i am function component</h1>
+    )
+}
+export default demo2
+
+write about yourself using function sbased component and it should be printed on the web page
+
+
+dom in js
+let h1 = document.createElement("h1)
+console.log(h1)
+h1.textContent="hello"
+React.createElement("tag-name" , "null or {id: "demo"} ", "content")
+eg:-
+React.createElement("h1" , "null" , "hello")
+eg:-
+React.createElement("div" , {id : "demo"} , react.createElement
+    ("span" , "null","hello"))
+)
+JSX(java-script xml)
+ it is used to create html in react 
+ it is neither String nor html
+ rules:-
+ 1 all the Elementments should be en-closed
+ eg:-
+ <img/>
+ <h1/>
+ 2 if there is a more then one element it should be wrapped inside parent elementor FragmentDirective.applyeg:-
+ <h1>hello</h1>
+ <h2>hello</h2>
+ </>
+ </> used in save the memort imn virtual dom(react 16.8)
+
+ 3 use {} for writting XPathExpression.
+ eg:- <h1>{5+5}</h1>
+
+props in react
+-->props stands properties.
+-->used to send data feom one component to another component.
+-->props are uni-directional.
+-->props are immutable
+
+state in react
+-->state is used to store data in the component and update the data in the component
+-->state is mutable(we can read and write)
+
+syntax:
+import {useState} from 'react'
+let [state, setState] = useState(initial-value)
+
+state-->used to store initial value
+setState-->used to update state value
+
+ways of using styles in react  
+1->inline css
+2->globally css  
+3->external css(important)
+
+note: Hook was introduced in react 16.8
+      It only works in the function based component
+
+useRef hook in react
+-----------------------
+--> ref stands for reference
+-->useRef uses real-dom
+-->useRef is having a object called current.
+-->used ref keyword
+-->it is used for in-controlled form
+
+syntax:-
+import {useRef} from 'react'
+let identifier=useRef()
+
+
+list and keys in react
+--------------------
+-->list is used to iterate array using map() method.
+-->keys are used to track an element.
+-->using keys will understand which element is created , updated and deleted.
+
+advantage :
+-->improves component efficiency
+-->improves optimization of the browser 
+
+
+how to avoid props drilling
+----------------------------
+1->useContext hook
+2->HOC(Higher order component)
+3->Redux
+
+useContext hook in react(imp)
+-------------------------------
+it is used to send data from one component to multiple component without passing props
+it is used to avoid props drilling
+
+Syntax
+------
+import React from react
+
+step1
+create a useContext and export it
+
+export let/var/const  identifier-name=React.createConext(initial-value)
+
+step2:
+use provider to pass the value
+
+<identifier-name.provider value={}>
+    <child component/>
+</identifier-name.provider>
+
+step3:
+use consumer to consume value given by provider
+
+import context from 'path'
+<identifier-name.consumer>
+    {
+        cbf
+    }
+</identifier-name.consumer>
+
+useEffect hoot in react
+-----------------------
+-->it is useed to side effect for function based component
+-->in react we can tell to component to perform something after component renders.
+
+advantage:-
+-->used for updating dom
+-->used for timer 
+-->it is used to fetch an api 
+
+useEffect will avoids react lifecycle 
+-->componentDidMount
+ComponentDidUpdate
+ComponentWillUnMount
+
+Syntax
+------
+import {useEffect} from 'react'
+
+useEffect(cbf,dependency
+
+dependency(3-ways)) 
+1->no dependency-->component will renders infinite times
+2->empty dependency-->component will render only once
+3->dependency with value(state,props)-->component will render only when value changes
